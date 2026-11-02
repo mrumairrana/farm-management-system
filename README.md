@@ -1,199 +1,606 @@
-# 🌾 AHMED FARM MANAGEMENT SYSTEM (AFMS) — Next-Gen Enterprise AgriTech OS
+# 🌾 UMAIR RANA FARM MANAGEMENT SYSTEM (URFMS)
+
+### 🚀 Next-Gen Enterprise AgriTech Operating System
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Super%20VIP%20Production%20Ready-2d6a4f?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Status" />
-  <img src="https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node" />
+  <img src="https://img.shields.io/badge/Project-Enterprise_AgriTech-2d6a4f?style=for-the-badge" alt="Project" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-4.21-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/License-MIT-d4af37?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 </p>
 
 <p align="center">
-  <strong>🌾 "Ahmed — Managing Your Farm, Maximizing Your Future"</strong><br>
-  A comprehensive, full-stack, enterprise-grade Farm Management System & AgriTech operating platform designed to manage livestock census, dairy parlor milk yields, crop cultivation cycles, categorized financial ledgers, inventory supply chain, staff attendance & payroll, machinery telematics, climate telemetry, and instant PDF/CSV reporting.
+  <strong>🌾 "Smart Farming. Better Management. Sustainable Future."</strong>
 </p>
 
 <p align="center">
-  <a href="#-key-features--14-core-modules">Explore Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-quick-start-installation">Quick Start</a> •
-  <a href="#-10-certified-pdf-reports">PDF Engine</a> •
-  <a href="#-bilingual-support-english--اردو">Bilingual</a> •
-  <a href="#-contributing">Contributing</a>
+  A modern, full-stack Farm Management System developed by <strong>Umair Rana</strong>, designed to digitize agricultural operations, livestock management, dairy production, crop cultivation, accounting, inventory, workforce management, machinery monitoring, and farm analytics.
+</p>
+
+<p align="center">
+  <a href="https://github.com/mrumairrana">GitHub</a> •
+  <a href="https://codexdeveloper.vercel.app/">Portfolio</a> •
+  <a href="https://www.linkedin.com/in/mrumairrana/">LinkedIn</a> •
+  <a href="#-key-features--14-core-modules">Features</a> •
+  <a href="#-installation--setup">Installation</a>
 </p>
 
 ---
 
+## 👨‍💻 About the Developer
+
+**Umair Rana — Full-Stack Web Developer**
+
+I specialize in developing modern, responsive, scalable, and user-friendly web applications using React.js, Node.js, Express.js, JavaScript, REST APIs, and modern database technologies.
+
+The Umair Rana Farm Management System is designed to simplify agricultural operations by integrating multiple farm management processes into one centralized digital platform.
+
+**Development Focus:**
+- Full-Stack Web Application Development
+- React.js Frontend Architecture
+- Node.js and Express.js REST APIs
+- Database Design and Integration
+- Responsive UI/UX Development
+- Dashboard and Data Visualization
+- Authentication and Application Security
+- Cloud Deployment and DevOps
+
+---
+
 ## 🌟 Visual Identity & Executive Design
-- **Theme Palette**: Executive Nature Dark Theme (`#1a1a2e` / `#121224`), Ahmed Emerald Green (`#2d6a4f`), Mint Accent (`#52b788`), and Gold Accents (`#d4af37`).
-- **Glassmorphism UI**: High-end translucent cards (`backdrop-blur-md`), glowing borders (`border-emerald-500/20`), smooth micro-animations, and responsive layouts.
-- **Currency & Regionalization**: Built-in support for Pakistani Rupees (`PKR ₨`) and regional agro-climatic conditions.
+
+| Element | Specification |
+|---|---|
+| Primary Theme | Executive Nature Dark |
+| Primary Background | `#1a1a2e` |
+| Secondary Background | `#121224` |
+| Emerald Green | `#2d6a4f` |
+| Mint Accent | `#52b788` |
+| Gold Accent | `#d4af37` |
+| UI Framework | React.js + Tailwind CSS |
+| Design Style | Glassmorphism |
+| Currency | Pakistani Rupees (PKR ₨) |
+| Languages | English & Urdu |
+| Layout | Responsive, Desktop, Tablet & Mobile |
+
+### ✨ Premium UI Experience
+
+- Modern enterprise dashboard
+- Collapsible navigation sidebar
+- Responsive cards and tables
+- Smooth transitions and animations
+- Dark executive interface
+- Interactive charts and analytics
+- Floating quick-action buttons
+- Urdu Right-to-Left (RTL) support
+- Smart alerts and notifications
 
 ---
 
 ## 🚀 Key Features & 14 Core Modules
 
-```
-🌾 AHMED FARM MANAGEMENT SYSTEM (AFMS)
-├── 01. 📊 Executive Dashboard (Real-time KPIs, Recharts data analytics, rotating agro tips)
-├── 02. 🐄 Livestock Management (156 heads across 7 species, pedigree lineage, printable QR ID cards)
-├── 03. 🥛 Milk Production Ledger (Daily session yields, fat % testing, bulk buyer accounts)
-├── 04. 🌱 Crop & Plot Agronomy (8 plots / 125 acres, soil moisture telemetry, harvest margins)
-├── 05. 💰 Expense Tracker & Accounting (14 categorized disbursements, printable payment vouchers)
-├── 06. 📦 Warehouse & Inventory (6 categories, automated min-stock threshold alarms, movement log)
-├── 07. 👨‍🌾 Staff & Payroll Register (8 staff members, biometric-style attendance, salary slips)
-├── 08. 🚜 Machinery & Fleet Telematics (Hours run, scheduled overhaul alerts, diesel telemetry)
-├── 09. 📋 Kanban Chore Board (Drag-and-drop tasks, priority tags, worker assignments)
-├── 10. 🩺 Veterinary & Quarantine Bay (Pen B isolation monitor, antibiotic withdrawal timers)
-├── 11. 🌦️ Agro-Meteorology & Weather (32°C telemetry, heat-stress alarms, 30-day history)
-├── 12. 📈 Certified PDF & CSV Reporting (10 official reports with letterhead & instant downloads)
-├── 13. ⚙️ Farm Profile & Settings (Farm metadata, currency formatting, JSON backup & restore)
-└── 14. 🔔 Notifications & Compliance Hub (Severity-filtered alerts with deep module links)
+```text
+🌾 UMAIR RANA FARM MANAGEMENT SYSTEM
+│
+├── 01. 📊 Executive Dashboard
+│   ├── Farm Performance KPIs
+│   ├── Revenue & Expense Analytics
+│   ├── Livestock Statistics
+│   ├── Crop Production Overview
+│   └── Interactive Charts
+│
+├── 02. 🐄 Livestock Management
+│   ├── Animal Registration
+│   ├── Species & Breed Management
+│   ├── Animal Health Records
+│   ├── Vaccination History
+│   ├── Breeding & Pedigree
+│   └── Printable Animal ID Cards
+│
+├── 03. 🥛 Dairy & Milk Production
+│   ├── Daily Milk Collection
+│   ├── Morning & Evening Sessions
+│   ├── Milk Quality Testing
+│   ├── Buyer Management
+│   └── Production Reports
+│
+├── 04. 🌱 Crop & Field Management
+│   ├── Farm Plot Registration
+│   ├── Crop Planning
+│   ├── Sowing & Harvesting
+│   ├── Fertilizer Tracking
+│   ├── Irrigation Scheduling
+│   └── Harvest Profit Analysis
+│
+├── 05. 💰 Finance & Accounting
+│   ├── Income Management
+│   ├── Expense Tracking
+│   ├── Payment Vouchers
+│   ├── Profit & Loss Statements
+│   └── Financial Analytics
+│
+├── 06. 📦 Inventory Management
+│   ├── Warehouse Management
+│   ├── Stock Monitoring
+│   ├── Feed & Fertilizer Inventory
+│   ├── Purchase Records
+│   └── Low Stock Alerts
+│
+├── 07. 👨‍🌾 Staff & Payroll
+│   ├── Employee Registration
+│   ├── Attendance Management
+│   ├── Salary Calculation
+│   ├── Payroll Reports
+│   └── Salary Slip Generation
+│
+├── 08. 🚜 Machinery & Equipment
+│   ├── Equipment Registration
+│   ├── Fuel Consumption
+│   ├── Maintenance Scheduling
+│   ├── Operating Hours
+│   └── Equipment Performance
+│
+├── 09. 📋 Task Management
+│   ├── Kanban Task Board
+│   ├── Task Assignment
+│   ├── Priority Management
+│   ├── Deadline Tracking
+│   └── Task Completion Status
+│
+├── 10. 🩺 Veterinary Management
+│   ├── Animal Health Monitoring
+│   ├── Treatment Records
+│   ├── Vaccination Scheduling
+│   ├── Quarantine Management
+│   └── Veterinary Reports
+│
+├── 11. 🌦️ Weather Monitoring
+│   ├── Weather Dashboard
+│   ├── Temperature Monitoring
+│   ├── Humidity Tracking
+│   ├── Weather History
+│   └── Climate Alerts
+│
+├── 12. 📈 Reports & Analytics
+│   ├── PDF Report Generation
+│   ├── CSV Data Export
+│   ├── Financial Statements
+│   ├── Production Analytics
+│   └── Annual Farm Reports
+│
+├── 13. ⚙️ Farm Settings
+│   ├── Farm Profile
+│   ├── Language Settings
+│   ├── Currency Configuration
+│   ├── Data Backup
+│   └── Data Restore
+│
+└── 14. 🔔 Notification Center
+    ├── Health Alerts
+    ├── Inventory Alerts
+    ├── Equipment Maintenance
+    ├── Task Reminders
+    └── Farm Activity Notifications
 ```
 
 ---
 
-### 🌟 Interactive Super VIP Highlights
+## ⚡ Advanced Enterprise Features
 
-1. **⚡ Floating Rapid Entry Mode (`+` Button)**:
-   - Always-accessible floating action button on bottom-right for instant logging of daily milk yields, expense vouchers, or worker tasks without page reloads.
+### 1. Smart Executive Dashboard
 
-2. **🌐 Bilingual Support (English & اردو)**:
-   - 1-Click language toggle that instantly translates navigation labels and flips layouts to native Right-to-Left (RTL) mode for Urdu users.
+A centralized dashboard for monitoring farm performance and operational activities.
 
-3. **🪪 Printable Livestock ID Badges**:
-   - Digital animal identification cards with simulated QR Code, barcode, breed genetics, parent pedigree (Dam/Sire), and vaccination tags.
+- Real-time KPI widgets
+- Livestock distribution charts
+- Monthly income and expense graphs
+- Milk production trends
+- Crop performance statistics
+- Operational notifications
 
-4. **📄 10 Certified PDF Reports & CSV Exports**:
-   - Built-in `jsPDF` & `jspdf-autotable` engine generating executive farm letterhead reports with `#2d6a4f` headers and downloadable CSV spreadsheets:
-     - *1. Daily Farm Activity Report*
-     - *2. Monthly Milk Production Audit*
-     - *3. Monthly Expense & Disbursement Report*
-     - *4. Profit & Loss Financial Statement (₨ PKR)*
-     - *5. Animal Health & Quarantine Audit*
-     - *6. Crop Agronomy & Harvest Yield Summary*
-     - *7. Staff Attendance & Payroll Ledger*
-     - *8. Farm Inventory Valuation & Stock Audit*
-     - *9. Heavy Equipment Utilization Audit*
-     - *10. Annual Comprehensive Farm Summary*
+### 2. Floating Quick Entry System
 
-5. **🛡️ Universal Confirmation & LocalStorage Persistence**:
-   - Accidental data loss prevention (`Are you sure? — Ahmed Farm System`).
-   - Full client-side sync across browser sessions with pre-loaded 150+ realistic Pakistani agro records.
+A floating action button allows users to quickly:
 
----
+- Add milk production records
+- Register expenses
+- Create worker tasks
+- Add livestock records
+- Update farm activities
 
-## 🛠️ Tech Stack & Architecture
+### 3. Bilingual Support — English & اردو
 
-| Layer | Technologies Used |
-|---|---|
-| **Frontend UI/UX** | React 19, Tailwind CSS 3.4, React Icons, Glassmorphism CSS |
-| **Data Visualization** | Recharts (Area, Line, Bar, Stacked Charts), Chart.js |
-| **Document Generation** | jsPDF, jspdf-autotable, html2canvas |
-| **Backend & APIs** | Node.js, Express.js 4.21, CORS, Dotenv |
-| **Database & ODM** | MongoDB, Mongoose 8.9 (with fallback fault tolerance) |
-| **AI Integration** | Google Gemini Generative AI SDK (`@google/generative-ai`) |
+- One-click language switching
+- English and Urdu navigation
+- Right-to-Left interface support
+- Regional currency formatting
+- Localized farm terminology
 
----
+### 4. Animal Identification System
 
-## 📥 Quick Start Installation
+Generate printable livestock identification cards containing:
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
-- [Git](https://git-scm.com/)
-- [MongoDB](https://www.mongodb.com/) (Optional - local fallback supported)
+- Animal ID and QR code
+- Breed and species
+- Date of birth
+- Parent information
+- Vaccination status
+- Farm identification
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/YOUR_USERNAME/ahmed-farm-management-system.git
-cd ahmed-farm-management-system
-```
+### 5. PDF & CSV Reporting
 
-### 2. Configure Backend Server
-```bash
-cd backend
-npm install
-npm start
-```
-> Server will start on `http://localhost:5000`
+Generate structured agricultural reports with professional formatting, tables, and export options.
 
-### 3. Launch Frontend Client
-Open a second terminal window:
-```bash
-cd frontend
-npm install
-npm start
-```
-> The application will open automatically at `http://localhost:3000`
+### 6. Smart Data Management
+
+- Browser LocalStorage support
+- MongoDB database integration
+- CRUD operations
+- Confirmation dialogs
+- JSON backup and restore
+- Farm record management
 
 ---
 
-## ⚙️ Environment Variables Configuration
+## 📄 10 Professional PDF Reports
 
-### `backend/.env`
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/ahmed_farm_db
-JWT_SECRET=ahmed_farm_secret_jwt_key_2026
-GEMINI_API_KEY=your_gemini_api_key_here
+| # | Report Name | Format |
+|---|---|---|
+| 01 | Daily Farm Activity Report | PDF / CSV |
+| 02 | Monthly Milk Production Report | PDF / CSV |
+| 03 | Monthly Expense Report | PDF / CSV |
+| 04 | Profit & Loss Statement | PDF / CSV |
+| 05 | Animal Health Report | PDF / CSV |
+| 06 | Crop & Harvest Report | PDF / CSV |
+| 07 | Staff Attendance & Payroll | PDF / CSV |
+| 08 | Inventory Valuation Report | PDF / CSV |
+| 09 | Machinery Utilization Report | PDF / CSV |
+| 10 | Annual Farm Performance Report | PDF / CSV |
+
+**Report Engine:**
+- jsPDF
+- jspdf-autotable
+- html2canvas
+- CSV Export
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,js,html,css,tailwind" alt="Frontend Technologies" />
+</p>
+
+- React.js 19
+- JavaScript ES6+
+- Tailwind CSS 3.4
+- React Icons
+- Recharts
+- Chart.js
+- React Hooks
+- Responsive Design
+
+### Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb" alt="Backend Technologies" />
+</p>
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- REST APIs
+- JWT Authentication
+- CORS
+- Dotenv
+
+### Development Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,docker,vercel" alt="Development Tools" />
+</p>
+
+- Git & GitHub
+- Visual Studio Code
+- Postman
+- Docker
+- Vercel
+- npm
+
+### AI Integration
+
+- Google Gemini API
+- AI Farm Assistant
+- Agricultural Information Assistance
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                    FARM USERS
+                        |
+                        v
+              React.js Frontend
+                        |
+          +-------------+-------------+
+          |                           |
+          v                           v
+     Dashboard UI               Farm Modules
+          |                           |
+          +-------------+-------------+
+                        |
+                        v
+                  REST API
+                        |
+                        v
+               Node.js + Express
+                        |
+          +-------------+-------------+
+          |                           |
+          v                           v
+      Controllers                 Middleware
+          |                           |
+          +-------------+-------------+
+                        |
+                        v
+                 Mongoose ODM
+                        |
+                        v
+                 MongoDB Database
+                        |
+                        v
+                 Farm Records
 ```
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
-```
-FYP_FMS/
+```text
+umair-rana-farm-management-system/
+│
 ├── backend/
-│   ├── config/             # Database connection with fallback safety
-│   ├── controllers/        # Route controllers
-│   ├── models/             # Mongoose schemas (Animals, Crops, Staff, Milk, etc.)
-│   ├── routes/             # REST API endpoints
-│   ├── .env                # Backend environment configuration
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── .env
 │   ├── package.json
-│   └── server.js           # Express application entrypoint
+│   └── server.js
+│
 ├── frontend/
-│   ├── public/             # Static assets & index.html
+│   ├── public/
 │   ├── src/
+│   │   ├── assets/
 │   │   ├── components/
-│   │   │   ├── AhmedFarm/  # 🌾 AHMED FARM SUPER VIP SUITE
-│   │   │   │   ├── data/   # 150+ realistic initial Pakistani seed records
-│   │   │   │   ├── modules/# 14 Dedicated Functional Modules
-│   │   │   │   └── AhmedLayout.js # Main Layout with Header, Sidebar & Quick +
-│   │   │   ├── ChatBot/    # AI Farm Assistant
-│   │   │   ├── LandingPage/# Classic View & Services Portal
-│   │   │   └── Navbar.js
-│   │   ├── App.js          # ViewMode Toggle (VIP / Classic)
-│   │   ├── index.css       # Tailwind & Glassmorphism theme styles
-│   │   └── index.js
+│   │   │   ├── Dashboard/
+│   │   │   ├── Livestock/
+│   │   │   ├── Dairy/
+│   │   │   ├── Crops/
+│   │   │   ├── Finance/
+│   │   │   ├── Inventory/
+│   │   │   ├── Staff/
+│   │   │   ├── Machinery/
+│   │   │   ├── Tasks/
+│   │   │   ├── Veterinary/
+│   │   │   ├── Weather/
+│   │   │   ├── Reports/
+│   │   │   ├── Settings/
+│   │   │   └── Notifications/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── index.css
 │   ├── package.json
 │   └── tailwind.config.js
+│
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
 ---
 
+## 📥 Installation & Setup
+
+### Prerequisites
+
+Make sure the following tools are installed:
+
+- Node.js 18+
+- npm
+- Git
+- MongoDB
+
+### Step 1 — Clone Repository
+
+```bash
+git clone https://github.com/mrumairrana/umair-rana-farm-management-system.git
+cd umair-rana-farm-management-system
+```
+
+### Step 2 — Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file:
+
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/umair_farm_db
+JWT_SECRET=replace_with_a_strong_random_secret
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+Start backend:
+
+```bash
+npm start
+```
+
+Backend URL:
+
+`http://localhost:5000`
+
+### Step 3 — Frontend Setup
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend URL:
+
+`http://localhost:3000`
+
+> Note: The commands above assume the repository has `backend` and `frontend` directories and matching npm scripts. Adjust them if your actual project differs.
+
+---
+
+## 🔐 Security & Data Protection
+
+The system architecture supports:
+
+- JWT authentication
+- Protected API routes
+- Role-based access control
+- Input validation
+- Secure environment configuration
+- Error handling
+- Confirmation dialogs
+- Data backup and recovery
+
+**Important:** Never commit `.env` files, JWT secrets, database credentials, or API keys to GitHub.
+
+---
+
+## 🎯 Project Objectives
+
+The Umair Rana Farm Management System aims to:
+
+1. Digitize agricultural business operations.
+2. Improve livestock record management.
+3. Monitor dairy and crop production.
+4. Simplify farm financial accounting.
+5. Improve inventory and warehouse visibility.
+6. Manage farm employees and payroll.
+7. Track equipment usage and maintenance.
+8. Generate accurate farm reports.
+9. Support data-driven agricultural decisions.
+10. Build a scalable foundation for modern farming technology.
+
+---
+
+## 🔮 Future Enhancements
+
+- 🤖 AI-powered farm recommendations
+- 📱 Android & iOS mobile applications
+- 🌍 Multi-farm management
+- 📡 IoT sensor integration
+- 🛰️ Satellite crop monitoring
+- 📊 Predictive agricultural analytics
+- 🐄 Smart livestock tracking
+- 💳 Digital payment integration
+- ☁️ Cloud-based data synchronization
+- 🔐 Advanced role-based permissions
+- 🌐 Additional language support
+- 📩 SMS and email notifications
+
+---
+
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, suggestions, and improvements are welcome.
 
-1. Fork the Project (`https://github.com/YOUR_USERNAME/ahmed-farm-management-system/fork`)
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repository.
+2. Create your feature branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a pull request.
+
+```bash
+git checkout -b feature/new-feature
+git add .
+git commit -m "Add new feature"
+git push origin feature/new-feature
+```
+
+---
+
+## 👨‍💻 Developer Information
+
+| Field | Details |
+|---|---|
+| Developer | Umair Rana |
+| Profession | Full-Stack Web Developer |
+| Specialization | React.js, Node.js, Express.js |
+| Database | MongoDB, PostgreSQL |
+| Country | Pakistan |
+| GitHub | [mrumairrana](https://github.com/mrumairrana) |
+| Portfolio | [codexdeveloper.vercel.app](https://codexdeveloper.vercel.app/) |
+| LinkedIn | [Umair Rana](https://www.linkedin.com/in/mrumairrana/) |
+
+### 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://github.com/mrumairrana">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/mrumairrana/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://codexdeveloper.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-2d6a4f?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="https://wa.me/923094093333">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+  </a>
+  <a href="https://www.tiktok.com/@mromairrana">
+    <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" />
+  </a>
+</p>
 
 ---
 
 ## 📄 License
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
+This project may be distributed under the **MIT License** when a corresponding `LICENSE` file is added to the repository.
 
 ---
 
 <p align="center">
-  <strong>🌾 AHMED FARM MANAGEMENT SYSTEM</strong><br>
-  Built with ❤️ for Modern Agricultural Innovation & Enterprise Farming.
+  <strong>🌾 UMAIR RANA FARM MANAGEMENT SYSTEM</strong>
+</p>
+
+<p align="center">
+  <strong>Smart Farming • Digital Agriculture • Sustainable Growth</strong>
+</p>
+
+<p align="center">
+  Developed by <a href="https://github.com/mrumairrana"><strong>Umair Rana</strong></a>
+</p>
+
+<p align="center">
+  ⭐ If you find this project useful, consider starring the repository!
+</p>
+
+<p align="center">
+  © 2026 Umair Rana. All Rights Reserved.
 </p>
