@@ -1,5 +1,5 @@
-// Ahmed Farm Initial Data Store & Seed Data (SUPER VIP 150+ Records)
-// Tagline: "Ahmed — Managing Your Farm, Maximizing Your Future"
+// Farm Builder Initial Data Store & Seed Data (SUPER VIP 150+ Records)
+// Tagline: "Farm Builder — Managing Your Farm, Maximizing Your Future"
 // Currency: Pakistani Rupees (₨ PKR)
 
 export const initialAhmedTips = [
@@ -25,7 +25,7 @@ export const initialAnimalCategories = [
 export const initialAnimals = [
   {
     _id: "a1",
-    animalId: "AHMED-C001",
+    animalId: "FB-C001",
     name: "Gulabi",
     species: "Cattle",
     category: "Dairy Cattle",
@@ -34,8 +34,8 @@ export const initialAnimals = [
     dob: "2022-08-10",
     weight: 420,
     sex: "Female",
-    motherId: "AHMED-C000M",
-    fatherId: "AHMED-B001F",
+    motherId: "FB-C000M",
+    fatherId: "FB-B001F",
     purchaseDate: "2023-01-15",
     purchasePrice: 280000,
     status: "Active",
@@ -59,7 +59,7 @@ export const initialAnimals = [
   },
   {
     _id: "a2",
-    animalId: "AHMED-C002",
+    animalId: "FB-C002",
     name: "Kali",
     species: "Cattle",
     category: "Dairy Cattle",
@@ -68,8 +68,8 @@ export const initialAnimals = [
     dob: "2023-05-12",
     weight: 480,
     sex: "Female",
-    motherId: "AHMED-C000X",
-    fatherId: "AHMED-B002S",
+    motherId: "FB-C000X",
+    fatherId: "FB-B002S",
     purchaseDate: "2023-09-05",
     purchasePrice: 295000,
     status: "Active",
@@ -91,7 +91,7 @@ export const initialAnimals = [
   },
   {
     _id: "a3",
-    animalId: "AHMED-C003",
+    animalId: "FB-C003",
     name: "Motia",
     species: "Goats",
     category: "Goats",
@@ -100,8 +100,8 @@ export const initialAnimals = [
     dob: "2024-06-15",
     weight: 45,
     sex: "Female",
-    motherId: "AHMED-GT03",
-    fatherId: "AHMED-GT01",
+    motherId: "FB-GT03",
+    fatherId: "FB-GT01",
     purchaseDate: "2024-09-01",
     purchasePrice: 52000,
     status: "Active",
@@ -779,12 +779,12 @@ export const initialNotifications = [
 ];
 
 export const initialSettings = {
-  farmName: "Ahmed Farm Management System",
-  tagline: "Ahmed — Managing Your Farm, Maximizing Your Future",
-  ownerName: "Ahmed Khan",
-  registrationNumber: "PK-AGRO-AF-2026-908",
+  farmName: "Farm Builder Management System",
+  tagline: "Farm Builder — Managing Your Farm, Maximizing Your Future",
+  ownerName: "Farm Builder",
+  registrationNumber: "PK-AGRO-FB-2026-908",
   contactPhone: "+92 300 1234567",
-  contactEmail: "admin@ahmedfarm.pk",
+  contactEmail: "admin@farmbuilder.pk",
   farmLocation: "Mianwali Agro Hub, Punjab, Pakistan",
   farmSize: "125 Acres / 1000 Kanals",
   farmType: "Mixed Enterprise (Dairy + Crops + Livestock)",

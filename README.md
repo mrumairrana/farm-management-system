@@ -194,6 +194,6 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 <p align="center">
-  <strong>🌾 AHMED FARM MANAGEMENT SYSTEM</strong><br>
+  <strong>🌾 FARM BUILDER MANAGEMENT SYSTEM</strong><br>
   Built with ❤️ for Modern Agricultural Innovation & Enterprise Farming.
 </p>

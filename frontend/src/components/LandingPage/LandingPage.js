@@ -44,9 +44,9 @@ const LandingPage = ({
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="inline-block bg-[#d4af37] text-gray-950 text-xs font-black uppercase px-3 py-1 rounded-full mb-3 shadow-glow-gold">
-            🌾 AHMED FARM ENTERPRISE
+            🌾 Farm Builder ENTERPRISE
           </div>
-          <h1>Ahmed — Managing Your Farm, Maximizing Your Future</h1>
+          <h1>Farm Builder — Managing Your Farm, Maximizing Your Future</h1>
           <p className="w-[600px] max-w-full mx-auto text-gray-200">
             A comprehensive, data-rich Farm Management System for precision livestock monitoring, daily milk production logs, crop plot lifecycle analytics, financial tracking, and intelligent farm assistance.
           </p>
@@ -62,7 +62,7 @@ const LandingPage = ({
         <div className="text">
           <h2>Our Vision</h2>
           <p>
-            To empower modern agricultural operations through comprehensive digital tools branded as the <strong>Ahmed Farm Management System</strong>. Our centralized platform provides real-time livestock tracking, milk yield auditing, crop field growth mapping, financial ledger analytics, veterinary medical history, and AI-powered farming advisory.
+            To empower modern agricultural operations through comprehensive digital tools branded as the <strong>Farm Builder Management System</strong>. Our centralized platform provides real-time livestock tracking, milk yield auditing, crop field growth mapping, financial ledger analytics, veterinary medical history, and AI-powered farming advisory.
           </p>
         </div>
         <div className="image">
@@ -71,7 +71,7 @@ const LandingPage = ({
       </section>
 
       <section className="services" id="services-section">
-        <h2>Ahmed Farm Core Modules & Services</h2>
+        <h2>Farm Builder Core Modules & Services</h2>
         <div className="service-list">
           <div
             className="service-item"
@@ -132,7 +132,7 @@ const LandingPage = ({
             }}
           >
             <img src={service4} alt="ChatBot" />
-            <h3>Ahmed Farm AI Advisor</h3>
+            <h3>Farm Builder AI Advisor</h3>
             <p>
               Get real-time answers to agricultural, dairy, and crop queries in English and Urdu using Gemini AI.
             </p>
@@ -164,21 +164,21 @@ const LandingPage = ({
       </section>
 
       <footer className="footer" id="about-section">
-        <h3>Ahmed Farm Management System</h3>
+        <h3>Farm Builder Management System</h3>
         <p className="text-amber-300 font-semibold mb-2">
-          "Ahmed — Managing Your Farm, Maximizing Your Future"
+          "Farm Builder — Managing Your Farm, Maximizing Your Future"
         </p>
         <p>
-          <strong>Headquarters:</strong> Mianwali Agro Hub, Punjab, Pakistan
+          <strong>Headquarters:</strong> Lahore, Punjab, Pakistan
         </p>
         <p>
-          <strong>Proprietor:</strong> Ahmed Khan
+          <strong>Proprietor:</strong> Farm Builder
         </p>
         <p>
-          <strong>Email:</strong> admin@ahmedfarm.pk • support@ahmedfarm.pk
+          <strong>Email:</strong> admin@farmbuilder.pk • support@farmbuilder.pk
         </p>
         <p>
-          <strong>Direct Line:</strong> +92 300 1234567
+          <strong>Direct Line:</strong> +92 309 409 3333
         </p>
       </footer>
     </div>

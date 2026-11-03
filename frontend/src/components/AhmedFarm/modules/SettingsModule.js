@@ -65,10 +65,10 @@ const SettingsModule = ({ settings, setSettings, farmData, setFarmData }) => {
             <span className="text-xs bg-[#d4af37] text-gray-950 font-bold px-2 py-0.5 rounded-full">
               System Configuration
             </span>
-            <span className="text-xs text-gray-400">Ahmed Farm OS v2.5 VIP Edition</span>
+            <span className="text-xs text-gray-400">Farm Builder OS v2.5 VIP Edition</span>
           </div>
           <h1 className="text-2xl md:text-3xl font-extrabold text-white mt-1">
-            ⚙️ AHMED FARM <span className="text-[#52b788]">SETTINGS</span>
+            ⚙️ FARM BUILDER <span className="text-[#52b788]">SETTINGS</span>
           </h1>
           <p className="text-gray-300 text-xs mt-0.5">
             Farm identity metadata, currency/unit configurations, automated data exports, and cloud backup vaults.
@@ -242,7 +242,7 @@ const SettingsModule = ({ settings, setSettings, farmData, setFarmData }) => {
               </div>
               <div className="flex justify-between items-center py-1">
                 <span className="text-gray-400">System Kernel</span>
-                <span className="text-[#d4af37] font-bold font-mono">Ahmed Farm OS v2.5</span>
+                <span className="text-[#d4af37] font-bold font-mono">Farm Builder OS v2.5</span>
               </div>
             </div>
           </div>

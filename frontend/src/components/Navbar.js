@@ -80,7 +80,7 @@ const Navbar = ({
             className="text-xl md:text-2xl font-black cursor-pointer text-white flex items-center gap-2 tracking-wide"
             onClick={onNavigateToLanding}
           >
-            <span>🌾 AHMED FARM</span>
+            <span>🌾 FARM BUILDER</span>
             <span className="text-[#d4af37] text-sm md:text-base font-bold bg-amber-400/20 px-2 py-0.5 rounded-full border border-amber-400/40">
               MANAGEMENT
             </span>

@@ -104,10 +104,10 @@ const DashboardModule = ({ farmData, onNavigateModule }) => {
             </span>
           </div>
           <h1 className="text-2xl md:text-3xl font-extrabold text-white">
-            🌾 AHMED FARM <span className="text-[#d4af37]">COMMAND CENTER</span>
+            🌾 Farm Builder <span className="text-[#d4af37]">COMMAND CENTER</span>
           </h1>
           <p className="text-gray-300 text-sm mt-1">
-            "Ahmed — Managing Your Farm, Maximizing Your Future" • <span className="text-emerald-400">All 14 Operational Subsystems Active</span>
+            "Farm Builder — Managing Your Farm, Maximizing Your Future" • <span className="text-emerald-400">All 14 Operational Subsystems Active</span>
           </p>
         </div>
 
@@ -141,7 +141,7 @@ const DashboardModule = ({ farmData, onNavigateModule }) => {
           </div>
           <div>
             <div className="text-xs font-bold uppercase tracking-wider text-amber-300 flex items-center gap-1.5">
-              <span>Ahmed's Farm Wisdom Today:</span>
+              <span>Farm Builder's Farm Wisdom Today:</span>
               <span className="text-[10px] bg-amber-400/20 text-amber-200 px-2 py-0.2 rounded-full">Daily Best Practice</span>
             </div>
             <p className="text-sm text-gray-100 italic mt-0.5">"{tips[tipIndex]}"</p>

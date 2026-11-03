@@ -225,7 +225,7 @@ const AhmedLayout = ({
     { id: "medical", name: language === "ur" ? urduModules.medical : "10. Medical & Health", icon: <FaStethoscope />, badge: "Alert" },
     { id: "weather", name: language === "ur" ? urduModules.weather : "11. Weather Log", icon: <FaSun />, badge: "32°C" },
     { id: "reports", name: language === "ur" ? urduModules.reports : "12. Reports & Analytics", icon: <FaFileAlt />, badge: "PDF" },
-    { id: "settings", name: language === "ur" ? urduModules.settings : "13. Ahmed Farm Settings", icon: <FaCog />, badge: null },
+    { id: "settings", name: language === "ur" ? urduModules.settings : "13. Farm Builder Settings", icon: <FaCog />, badge: null },
     { id: "notifications", name: language === "ur" ? urduModules.notifications : "14. Notifications Center", icon: <FaBell />, badge: unreadNotifCount > 0 ? `${unreadNotifCount}` : null }
   ];
 
@@ -448,13 +448,13 @@ const AhmedLayout = ({
             </div>
             <div>
               <div className="font-extrabold text-sm md:text-base tracking-wide text-white flex items-center gap-1.5">
-                <span>AHMED FARM</span>
+                <span>Farm Builder</span>
                 <span className="text-[#d4af37] font-black text-xs md:text-sm bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">
                   MANAGEMENT SYSTEM
                 </span>
               </div>
               <p className="text-[10px] text-gray-400 hidden sm:block italic leading-none">
-                Ahmed — Managing Your Farm, Maximizing Your Future
+                Farm Builder — Managing Your Farm, Maximizing Your Future
               </p>
             </div>
           </div>
@@ -490,7 +490,7 @@ const AhmedLayout = ({
           <button
             onClick={onOpenChatBot}
             className="bg-emerald-600/30 hover:bg-emerald-600 text-emerald-300 hover:text-white px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1.5 border border-emerald-500/30 shadow-glow-green"
-            title="Ask Ahmed Farm AI Chatbot"
+            title="Ask Farm Builder AI Chatbot"
           >
             <FaRobot className="text-sm" />
             <span className="hidden md:inline">Farm AI</span>
@@ -524,13 +524,13 @@ const AhmedLayout = ({
           <div
             onClick={onOpenProfile}
             className="flex items-center gap-2 cursor-pointer p-1 bg-gray-900/90 rounded-full border border-emerald-500/30 hover:border-[#d4af37] transition"
-            title="Ahmed Farm Owner Profile"
+            title="Farm Builder Owner Profile"
           >
             <div className="w-8 h-8 rounded-full bg-[#2d6a4f] text-[#d4af37] font-extrabold flex items-center justify-center text-xs">
-              AK
+              UR
             </div>
             <div className="hidden md:block pr-2 text-left">
-              <div className="text-xs font-bold text-white leading-none">Ahmed Khan</div>
+              <div className="text-xs font-bold text-white leading-none">Umair Rana</div>
               <span className="text-[9px] text-[#d4af37] font-semibold">Administrator</span>
             </div>
           </div>
@@ -600,10 +600,10 @@ const AhmedLayout = ({
           <div className="p-3 border-t border-gray-800 text-center">
             {!sidebarCollapsed ? (
               <div className="text-[11px] text-gray-400">
-                <span className="text-[#d4af37] font-bold">Ahmed Farm OS</span> v2.5 VIP
+                <span className="text-[#d4af37] font-bold">Farm Builder OS</span> v2.5 VIP
               </div>
             ) : (
-              <div className="text-[10px] font-bold text-[#d4af37]">AF-VIP</div>
+              <div className="text-[10px] font-bold text-[#d4af37]">FB-VIP</div>
             )}
           </div>
         </aside>
@@ -821,7 +821,7 @@ const AhmedLayout = ({
         <div className="flex items-center gap-4 text-[11px] overflow-x-auto whitespace-nowrap">
           <div className="flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-emerald-400 font-bold">Ahmed Farm Status:</span>
+            <span className="text-emerald-400 font-bold">Farm Builder Status:</span>
             <span className="text-white">Online & Synced</span>
           </div>
 
@@ -855,7 +855,7 @@ const AhmedLayout = ({
         </div>
 
         <div className="text-[11px] font-mono text-gray-400 flex items-center gap-2 shrink-0">
-          <span className="text-[#d4af37] font-semibold">Ahmed Farm OS v2.5 VIP</span>
+          <span className="text-[#d4af37] font-semibold">Farm Builder OS v2.5 VIP</span>
         </div>
       </footer>
     </div>
