@@ -8,7 +8,7 @@ function MainChatBot({ onBackToLanding }) {
   const [messages, setMessages] = useState([
     {
       sender: 'bot',
-      text: '🌾 Welcome to **Ahmed Farm AI Advisor**! How can I assist you today with livestock health, milk production, crop agronomy, machinery, or financial planning?'
+      text: '🌾 Welcome to **Farm Builder AI Advisor**! How can I assist you today with livestock health, milk production, crop agronomy, machinery, or financial planning?'
     }
   ]);
   const [isLoading, setIsLoading] = useState(false);
@@ -87,7 +87,7 @@ function MainChatBot({ onBackToLanding }) {
             </div>
             <div>
               <h2 className="font-extrabold text-sm md:text-base leading-none text-white">
-                AHMED FARM <span className="text-[#d4af37]">AI ADVISOR</span>
+                FARM BUILDER <span className="text-[#d4af37]">AI ADVISOR</span>
               </h2>
               <span className="text-[10px] text-emerald-300">Intelligent Agricultural Decision Support</span>
             </div>

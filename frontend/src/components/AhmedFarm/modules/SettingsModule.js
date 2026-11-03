@@ -24,7 +24,7 @@ const SettingsModule = ({ settings, setSettings, farmData, setFarmData }) => {
   const handleExportBackup = () => {
     const backupObj = {
       exportedAt: new Date().toISOString(),
-      system: "AHMED FARM MANAGEMENT SYSTEM v2.5 VIP",
+      system: "FARM BUILDER MANAGEMENT SYSTEM v2.5 VIP",
       settings: formData,
       farmData: farmData
     };

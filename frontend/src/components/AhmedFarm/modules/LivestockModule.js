@@ -603,7 +603,7 @@ const LivestockModule = ({ animals, setAnimals, categories }) => {
               <strong>{deleteConfirmAnimal.name} ({deleteConfirmAnimal.animalId})</strong>?
               <br />
               <span className="text-[#d4af37] font-semibold mt-1 block">
-                — Ahmed Farm System
+                — Farm Builder System
               </span>
             </p>
             <div className="flex justify-center gap-3 pt-2">
@@ -963,7 +963,7 @@ const LivestockModule = ({ animals, setAnimals, categories }) => {
               <div className="flex justify-between items-start border-b border-[#d4af37]/40 pb-3 mb-3">
                 <div>
                   <h4 className="font-extrabold text-sm text-white tracking-wide">
-                    🌾 AHMED FARM
+                    🌾 FARM BUILDER
                   </h4>
                   <p className="text-[9px] text-[#d4af37] font-semibold">
                     OFFICIAL LIVESTOCK REGISTRY

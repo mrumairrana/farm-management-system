@@ -319,7 +319,7 @@ const ExpenseTrackerModule = ({ expenses, setExpenses, revenues, setRevenues }) 
 
             <div className="text-center border-b border-gray-800 pb-3 mb-4">
               <h3 className="text-lg font-black text-amber-300 uppercase tracking-wide">
-                AHMED FARM MANAGEMENT SYSTEM
+                FARM BUILDER MANAGEMENT SYSTEM
               </h3>
               <p className="text-[10px] text-emerald-300">Official Payment Voucher</p>
             </div>

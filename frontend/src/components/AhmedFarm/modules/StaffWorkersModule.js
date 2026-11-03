@@ -359,7 +359,7 @@ const StaffWorkersModule = ({ staff, setStaff }) => {
             {/* Salary Slip Document */}
             <div className="bg-[#121224] p-5 rounded-2xl border-2 border-[#d4af37] shadow-xl text-xs space-y-3">
               <div className="text-center border-b border-[#d4af37]/40 pb-3">
-                <h3 className="font-black text-base text-white">🌾 AHMED FARM MANAGEMENT</h3>
+                <h3 className="font-black text-base text-white">🌾 FARM BUILDER MANAGEMENT</h3>
                 <p className="text-[10px] text-[#d4af37] font-semibold uppercase">
                   Official Monthly Salary & Wages Slip
                 </p>
