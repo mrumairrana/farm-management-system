@@ -133,7 +133,7 @@ const DashboardModule = ({ farmData, onNavigateModule }) => {
         </div>
       </div>
 
-      {/* Ahmed Daily Wisdom Tip Banner */}
+      {/* Farm Builder Daily Wisdom Tip Banner */}
       <div className="ahmed-glass-gold p-4 rounded-xl border border-amber-500/30 shadow-glass-gold flex items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl shrink-0">
@@ -441,7 +441,7 @@ const DashboardModule = ({ farmData, onNavigateModule }) => {
               <li className="flex items-center justify-between p-2 rounded-lg bg-gray-900/50 border border-emerald-500/30">
                 <div className="flex items-center gap-2">
                   <span className="text-amber-400 animate-pulse">●</span>
-                  <span className="text-white font-medium">Check Sick Cow AHMED-C003</span>
+                  <span className="text-white font-medium">Check Sick Cow FB-C003</span>
                 </div>
                 <span className="text-[10px] bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded">Urgent</span>
               </li>
@@ -587,7 +587,7 @@ const DashboardModule = ({ farmData, onNavigateModule }) => {
             <div className="space-y-2 text-xs">
               <div className="p-2 rounded-lg bg-red-500/10 border border-red-500/30">
                 <div className="flex justify-between">
-                  <span className="font-bold text-white">Bella White (AHMED-C003)</span>
+                  <span className="font-bold text-white">Bella White (FB-C003)</span>
                   <span className="text-[10px] bg-red-600 text-white px-1.5 rounded">Quarantined</span>
                 </div>
                 <p className="text-[11px] text-gray-300 mt-1">Diagnosis: Early Respiratory Infection • Temp: 39.2°C</p>
@@ -595,7 +595,7 @@ const DashboardModule = ({ farmData, onNavigateModule }) => {
               </div>
               <div className="p-2 rounded-lg bg-amber-500/10 border border-amber-500/30">
                 <div className="flex justify-between">
-                  <span className="font-bold text-white">Beetal Beauty (AHMED-G001)</span>
+                  <span className="font-bold text-white">Beetal Beauty (FB-G001)</span>
                   <span className="text-[10px] bg-emerald-600 text-white px-1.5 rounded">Vaccinated</span>
                 </div>
                 <p className="text-[11px] text-gray-300 mt-1">PPR Booster completed successfully</p>

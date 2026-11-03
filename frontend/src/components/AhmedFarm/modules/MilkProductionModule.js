@@ -88,7 +88,7 @@ const MilkProductionModule = ({ milkRecords, setMilkRecords, animals }) => {
   };
 
   const handleDelete = (id) => {
-    if (window.confirm("Are you sure you want to delete this milk record? — Ahmed Farm System")) {
+    if (window.confirm("Are you sure you want to delete this milk record? — Farm Builder System")) {
       setMilkRecords(milkRecords.filter((r) => r.id !== id));
     }
   };

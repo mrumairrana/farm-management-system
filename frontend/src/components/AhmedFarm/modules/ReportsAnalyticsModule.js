@@ -22,9 +22,9 @@ const ReportsAnalyticsModule = ({ farmData }) => {
   };
 
   // Base PDF Header Generator
-  const createAhmedDoc = (title, subtitle) => {
+  const createFarmBuilderDoc = (title, subtitle) => {
     const doc = new jsPDF();
-    doc.setFillColor(45, 106, 79); // Ahmed Green
+    doc.setFillColor(45, 106, 79); // Farm Builder Green
     doc.rect(0, 0, 210, 32, "F");
 
     doc.setTextColor(255, 255, 255);
@@ -40,7 +40,7 @@ const ReportsAnalyticsModule = ({ farmData }) => {
 
   // 1. Daily Farm Report
   const exportDailyFarmReport = () => {
-    const doc = createAhmedDoc("Daily Comprehensive Farm Activity Report", "All daily farm operations and telemetry");
+    const doc = createFarmBuilderDoc("Daily Comprehensive Farm Activity Report", "All daily farm operations and telemetry");
     const summaryData = [
       ["Total Livestock Registered", `${farmData.animals?.length || 156} Heads`],
       ["Today's Milk Yield", "420 Liters @ Grade A"],
@@ -58,13 +58,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       headStyles: { fillColor: [45, 106, 79] }
     });
 
-    doc.save("Ahmed_Farm_Daily_Report.pdf");
+    doc.save("FarmBuilder_Daily_Report.pdf");
     notifySuccess("Daily Farm Report Exported Successfully!");
   };
 
   // 2. Monthly Milk Production Report
   const exportMonthlyMilkReport = () => {
-    const doc = createAhmedDoc("Monthly Milk Production & Revenue Audit", "Milk yields, fat testing, and bulk sales");
+    const doc = createFarmBuilderDoc("Monthly Milk Production & Revenue Audit", "Milk yields, fat testing, and bulk sales");
     const records = farmData.milkRecords || [];
     const tableData = records.slice(0, 40).map((r) => [
       r.date,
@@ -86,13 +86,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Monthly_Milk_Report.pdf");
+    doc.save("FarmBuilder_Monthly_Milk_Report.pdf");
     notifySuccess("Monthly Milk Production Report Exported!");
   };
 
   // 3. Monthly Expense Report
   const exportMonthlyExpenseReport = () => {
-    const doc = createAhmedDoc("Monthly Expense & Disbursement Report", "Categorized disbursements vs operational budget");
+    const doc = createFarmBuilderDoc("Monthly Expense & Disbursement Report", "Categorized disbursements vs operational budget");
     const expenses = farmData.expenses || [];
     const expData = expenses.map((e) => [
       e.date,
@@ -113,13 +113,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Monthly_Expenses.pdf");
+    doc.save("FarmBuilder_Monthly_Expenses.pdf");
     notifySuccess("Monthly Expense Report Exported!");
   };
 
   // 4. Profit & Loss Statement
   const exportPLStatement = () => {
-    const doc = createAhmedDoc("Profit & Loss Financial Statement (₨ PKR)", "Gross farm revenues vs categorized expenditures");
+    const doc = createFarmBuilderDoc("Profit & Loss Financial Statement (₨ PKR)", "Gross farm revenues vs categorized expenditures");
     const plData = [
       ["Gross Revenue - Daily Milk Sales", "₨185,000"],
       ["Gross Revenue - Livestock Sales", "₨620,000"],
@@ -146,13 +146,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 9 }
     });
 
-    doc.save("Ahmed_Farm_Profit_Loss_Statement.pdf");
+    doc.save("FarmBuilder_Profit_Loss_Statement.pdf");
     notifySuccess("Profit & Loss Statement Exported!");
   };
 
   // 5. Animal Health Report
   const exportAnimalHealthReport = () => {
-    const doc = createAhmedDoc("Livestock Medical & Vaccination Audit", "Clinical diagnoses, treatments, and quarantine logs");
+    const doc = createFarmBuilderDoc("Livestock Medical & Vaccination Audit", "Clinical diagnoses, treatments, and quarantine logs");
     const meds = farmData.medicalRecords || [];
     const tableData = meds.map((m) => [
       m.date,
@@ -174,13 +174,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Health_Report.pdf");
+    doc.save("FarmBuilder_Health_Report.pdf");
     notifySuccess("Animal Health Report Exported!");
   };
 
   // 6. Crop Yield Report
   const exportCropYieldReport = () => {
-    const doc = createAhmedDoc("Crop Agronomy & Harvest Yield Summary", "Plot-by-plot yield targets and financial margins");
+    const doc = createFarmBuilderDoc("Crop Agronomy & Harvest Yield Summary", "Plot-by-plot yield targets and financial margins");
     const crops = farmData.crops || [];
     const tableData = crops.map((c) => [
       c.plotName,
@@ -202,13 +202,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Crop_Yield_Report.pdf");
+    doc.save("FarmBuilder_Crop_Yield_Report.pdf");
     notifySuccess("Crop Yield Report Exported!");
   };
 
   // 7. Staff Attendance & Payroll Report
   const exportPayrollReport = () => {
-    const doc = createAhmedDoc("Staff Attendance & Monthly Payroll Ledger", "Wages, overtime, and attendance status");
+    const doc = createFarmBuilderDoc("Staff Attendance & Monthly Payroll Ledger", "Wages, overtime, and attendance status");
     const staff = farmData.staff || [];
     const tableData = staff.map((s) => [
       s.id,
@@ -229,13 +229,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Staff_Payroll_Report.pdf");
+    doc.save("FarmBuilder_Staff_Payroll_Report.pdf");
     notifySuccess("Staff Attendance & Payroll Report Exported!");
   };
 
   // 8. Inventory Valuation Report
   const exportInventoryValuationReport = () => {
-    const doc = createAhmedDoc("Farm Inventory Valuation & Stock Audit", "Current asset values across feed, chemicals, and equipment");
+    const doc = createFarmBuilderDoc("Farm Inventory Valuation & Stock Audit", "Current asset values across feed, chemicals, and equipment");
     const inv = farmData.inventory || [];
     const tableData = inv.map((i) => [
       i.name,
@@ -256,13 +256,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Inventory_Valuation.pdf");
+    doc.save("FarmBuilder_Inventory_Valuation.pdf");
     notifySuccess("Inventory Valuation Report Exported!");
   };
 
   // 9. Equipment Utilization Report
   const exportEquipmentReport = () => {
-    const doc = createAhmedDoc("Heavy Equipment & Machinery Utilization Audit", "Operating hours, fuel consumption, and service due dates");
+    const doc = createFarmBuilderDoc("Heavy Equipment & Machinery Utilization Audit", "Operating hours, fuel consumption, and service due dates");
     const eq = farmData.machinery || [];
     const tableData = eq.map((m) => [
       m.id,
@@ -284,13 +284,13 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 8 }
     });
 
-    doc.save("Ahmed_Farm_Equipment_Utilization.pdf");
+    doc.save("FarmBuilder_Equipment_Utilization.pdf");
     notifySuccess("Equipment Utilization Report Exported!");
   };
 
   // 10. Annual Farm Summary
   const exportAnnualSummary = () => {
-    const doc = createAhmedDoc("Annual Comprehensive Farm Performance Summary", "Complete year-end operations overview");
+    const doc = createFarmBuilderDoc("Annual Comprehensive Farm Performance Summary", "Complete year-end operations overview");
     const annualData = [
       ["Annual Milk Production", "151,200 Liters (Total Gross: ₨2,797,200)"],
       ["Annual Livestock Sales", "32 Heads Dispatched (₨4,850,000)"],
@@ -298,7 +298,7 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       ["Total Operational Overheads", "₨3,650,000 (Feed, Fuel, Wages, Repairs)"],
       ["Net Annual Farm Profit", "₨10,417,200"],
       ["Herd Health & Vaccination Rate", "100% Up to Date"],
-      ["Overall Operational Status", "100% Operational (Ahmed Farm Enterprise)"]
+      ["Overall Operational Status", "100% Operational (Farm Builder Enterprise)"]
     ];
 
     doc.autoTable({
@@ -310,7 +310,7 @@ const ReportsAnalyticsModule = ({ farmData }) => {
       styles: { fontSize: 9 }
     });
 
-    doc.save("Ahmed_Farm_Annual_Summary.pdf");
+    doc.save("FarmBuilder_Annual_Summary.pdf");
     notifySuccess("Annual Farm Summary Exported!");
   };
 
@@ -318,7 +318,7 @@ const ReportsAnalyticsModule = ({ farmData }) => {
   const exportCSV = (category) => {
     let headers = [];
     let rows = [];
-    let filename = `Ahmed_Farm_${category}_Export.csv`;
+    let filename = `FarmBuilder_${category}_Export.csv`;
 
     if (category === "Milk") {
       headers = ["Date", "Animal ID", "Animal Name", "Morning (L)", "Evening (L)", "Total (L)", "Fat %", "Quality", "Revenue (₨)"];
@@ -402,7 +402,7 @@ const ReportsAnalyticsModule = ({ farmData }) => {
             📈 REPORTS & <span className="text-[#52b788]">ANALYTICS ENGINE</span>
           </h1>
           <p className="text-gray-300 text-xs mt-0.5">
-            Instant client-side PDF document generator with official Ahmed Farm letterhead and spreadsheet exports.
+            Instant client-side PDF document generator with official Farm Builder letterhead and spreadsheet exports.
           </p>
         </div>
 

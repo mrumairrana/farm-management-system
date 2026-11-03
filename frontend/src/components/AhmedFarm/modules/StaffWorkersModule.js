@@ -399,7 +399,7 @@ const StaffWorkersModule = ({ staff, setStaff }) => {
               </div>
 
               <div className="flex justify-between items-center text-[9px] text-gray-500 pt-3 border-t border-gray-800">
-                <div>Authorized: Ahmed Khan (Proprietor)</div>
+                <div>Authorized: Farm Builder (Proprietor)</div>
                 <div>Status: Certified Paid</div>
               </div>
             </div>
@@ -436,7 +436,7 @@ const StaffWorkersModule = ({ staff, setStaff }) => {
                 <label className="text-gray-300 block mb-1">Full Name *</label>
                 <input
                   type="text"
-                  placeholder="e.g. Tariq Ahmed"
+                  placeholder="e.g. Staff Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required

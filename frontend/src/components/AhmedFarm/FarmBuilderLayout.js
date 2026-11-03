@@ -39,7 +39,7 @@ import SettingsModule from "./modules/SettingsModule";
 import NotificationsModule from "./modules/NotificationsModule";
 
 import {
-  initialAhmedTips,
+  initialFarmBuilderTips,
   initialAnimalCategories,
   initialAnimals,
   initialMilkRecords,
@@ -57,7 +57,7 @@ import {
   initialSettings
 } from "./data/initialFarmData";
 
-const AhmedLayout = ({
+const FarmBuilderLayout = ({
   onNavigateToClassic,
   onOpenChatBot,
   onOpenProfile,
@@ -79,108 +79,108 @@ const AhmedLayout = ({
   // Quick Form States
   const [quickMilk, setQuickMilk] = useState({ date: new Date().toISOString().split("T")[0], cowName: "Gulabi", quantity: 12.5 });
   const [quickExpense, setQuickExpense] = useState({ date: new Date().toISOString().split("T")[0], title: "", amount: "", category: "Animal Feed & Fodder" });
-  const [quickTask, setQuickTask] = useState({ title: "", assignee: "Tariq Ahmed", priority: "High", dueDate: new Date().toISOString().split("T")[0] });
+  const [quickTask, setQuickTask] = useState({ title: "", assignee: "Farm Manager", priority: "High", dueDate: new Date().toISOString().split("T")[0] });
 
   // Farm Data States (with LocalStorage caching for persistence)
   const [animals, setAnimals] = useState(() => {
-    const saved = localStorage.getItem("ahmed_animals");
+    const saved = localStorage.getItem("farmbuilder_animals");
     return saved ? JSON.parse(saved) : initialAnimals;
   });
 
   const [milkRecords, setMilkRecords] = useState(() => {
-    const saved = localStorage.getItem("ahmed_milk");
+    const saved = localStorage.getItem("farmbuilder_milk");
     return saved ? JSON.parse(saved) : initialMilkRecords;
   });
 
   const [crops, setCrops] = useState(() => {
-    const saved = localStorage.getItem("ahmed_crops");
+    const saved = localStorage.getItem("farmbuilder_crops");
     return saved ? JSON.parse(saved) : initialCrops;
   });
 
   const [expenses, setExpenses] = useState(() => {
-    const saved = localStorage.getItem("ahmed_expenses");
+    const saved = localStorage.getItem("farmbuilder_expenses");
     return saved ? JSON.parse(saved) : initialExpenses;
   });
 
   const [revenues, setRevenues] = useState(() => {
-    const saved = localStorage.getItem("ahmed_revenues");
+    const saved = localStorage.getItem("farmbuilder_revenues");
     return saved ? JSON.parse(saved) : initialRevenues;
   });
 
   const [inventory, setInventory] = useState(() => {
-    const saved = localStorage.getItem("ahmed_inventory");
+    const saved = localStorage.getItem("farmbuilder_inventory");
     return saved ? JSON.parse(saved) : initialInventory;
   });
 
   const [staff, setStaff] = useState(() => {
-    const saved = localStorage.getItem("ahmed_staff");
+    const saved = localStorage.getItem("farmbuilder_staff");
     return saved ? JSON.parse(saved) : initialStaff;
   });
 
   const [machinery, setMachinery] = useState(() => {
-    const saved = localStorage.getItem("ahmed_machinery");
+    const saved = localStorage.getItem("farmbuilder_machinery");
     return saved ? JSON.parse(saved) : initialMachinery;
   });
 
   const [tasks, setTasks] = useState(() => {
-    const saved = localStorage.getItem("ahmed_tasks");
+    const saved = localStorage.getItem("farmbuilder_tasks");
     return saved ? JSON.parse(saved) : initialTasks;
   });
 
   const [medicalRecords, setMedicalRecords] = useState(() => {
-    const saved = localStorage.getItem("ahmed_medical");
+    const saved = localStorage.getItem("farmbuilder_medical");
     return saved ? JSON.parse(saved) : initialMedicalRecords;
   });
 
   const [notifications, setNotifications] = useState(() => {
-    const saved = localStorage.getItem("ahmed_notifications");
+    const saved = localStorage.getItem("farmbuilder_notifications");
     return saved ? JSON.parse(saved) : initialNotifications;
   });
 
   const [settings, setSettings] = useState(() => {
-    const saved = localStorage.getItem("ahmed_settings");
+    const saved = localStorage.getItem("farmbuilder_settings");
     return saved ? JSON.parse(saved) : initialSettings;
   });
 
   // Save to LocalStorage on updates
   useEffect(() => {
-    localStorage.setItem("ahmed_animals", JSON.stringify(animals));
+    localStorage.setItem("farmbuilder_animals", JSON.stringify(animals));
   }, [animals]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_milk", JSON.stringify(milkRecords));
+    localStorage.setItem("farmbuilder_milk", JSON.stringify(milkRecords));
   }, [milkRecords]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_crops", JSON.stringify(crops));
+    localStorage.setItem("farmbuilder_crops", JSON.stringify(crops));
   }, [crops]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_expenses", JSON.stringify(expenses));
+    localStorage.setItem("farmbuilder_expenses", JSON.stringify(expenses));
   }, [expenses]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_revenues", JSON.stringify(revenues));
+    localStorage.setItem("farmbuilder_revenues", JSON.stringify(revenues));
   }, [revenues]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_inventory", JSON.stringify(inventory));
+    localStorage.setItem("farmbuilder_inventory", JSON.stringify(inventory));
   }, [inventory]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_staff", JSON.stringify(staff));
+    localStorage.setItem("farmbuilder_staff", JSON.stringify(staff));
   }, [staff]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_tasks", JSON.stringify(tasks));
+    localStorage.setItem("farmbuilder_tasks", JSON.stringify(tasks));
   }, [tasks]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_notifications", JSON.stringify(notifications));
+    localStorage.setItem("farmbuilder_notifications", JSON.stringify(notifications));
   }, [notifications]);
 
   useEffect(() => {
-    localStorage.setItem("ahmed_settings", JSON.stringify(settings));
+    localStorage.setItem("farmbuilder_settings", JSON.stringify(settings));
   }, [settings]);
 
   // Live Clock
@@ -207,7 +207,7 @@ const AhmedLayout = ({
     medical: "10. ویٹرنری و میڈیکل ریکارڈ",
     weather: "11. موسمیاتی لاگ و اسپرے",
     reports: "12. رپورٹس و پی ڈی ایف آڈٹ",
-    settings: "13. احمد فارم سیٹنگز",
+    settings: "13. فارم بلڈر سیٹنگز",
     notifications: "14. الرٹس و نوٹیفکیشن سینٹر"
   };
 
@@ -237,7 +237,7 @@ const AhmedLayout = ({
       id: `m_${Date.now()}`,
       date: quickMilk.date,
       session: "Morning",
-      animalId: "AHMED-C001",
+      animalId: "FB-C001",
       animalName: quickMilk.cowName,
       morning: qty / 2,
       evening: qty / 2,
@@ -249,7 +249,7 @@ const AhmedLayout = ({
       pricePerLiter: 185,
       revenue: Math.round(qty * 185),
       storageTank: "Tank A (Cold 4°C)",
-      loggedBy: "Ahmed (Quick Entry)",
+      loggedBy: "Farm Builder (Quick Entry)",
       notes: "Quick rapid entry"
     };
     setMilkRecords([newRecord, ...milkRecords]);
@@ -270,8 +270,8 @@ const AhmedLayout = ({
       paymentStatus: "Paid",
       paymentMethod: "Cash",
       vendor: "Local Agro Vendor",
-      invoiceNumber: `INV-AF-${Math.floor(1000 + Math.random() * 9000)}`,
-      approvedBy: "Ahmed (Owner)"
+      invoiceNumber: `INV-FB-${Math.floor(1000 + Math.random() * 9000)}`,
+      approvedBy: "Farm Builder (Owner)"
     };
     setExpenses([newExp, ...expenses]);
     setQuickActionModal(null);
@@ -298,7 +298,7 @@ const AhmedLayout = ({
 
   // Aggregated data object passed to sub-modules
   const combinedFarmData = {
-    tips: initialAhmedTips,
+    tips: initialFarmBuilderTips,
     animals,
     milkRecords,
     milkChartData: initialMilkChartData,
@@ -677,11 +677,11 @@ const AhmedLayout = ({
                   onChange={(e) => setQuickMilk({ ...quickMilk, cowName: e.target.value })}
                   className="w-full bg-gray-900 border border-gray-700 rounded-lg p-2 text-white"
                 >
-                  <option value="Gulabi">Gulabi (AHMED-C001)</option>
-                  <option value="Kali">Kali (AHMED-C002)</option>
-                  <option value="Chanda">Chanda (AHMED-C006)</option>
-                  <option value="Ruby Red">Ruby Red (AHMED-C010)</option>
-                  <option value="Sitara">Sitara (AHMED-C011)</option>
+                  <option value="Gulabi">Gulabi (FB-C001)</option>
+                  <option value="Kali">Kali (FB-C002)</option>
+                  <option value="Chanda">Chanda (FB-C006)</option>
+                  <option value="Ruby Red">Ruby Red (FB-C010)</option>
+                  <option value="Sitara">Sitara (FB-C011)</option>
                 </select>
               </div>
               <div>
@@ -862,4 +862,4 @@ const AhmedLayout = ({
   );
 };
 
-export default AhmedLayout;
+export default FarmBuilderLayout;

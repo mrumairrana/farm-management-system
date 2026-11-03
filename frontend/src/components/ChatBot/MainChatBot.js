@@ -34,15 +34,15 @@ function MainChatBot({ onBackToLanding }) {
     }
 
     if (q.includes("milk") || q.includes("dairy") || q.includes("yield")) {
-      return "To maximize dairy cattle milk yield at Ahmed Farm: 1) Provide high-energy maize silage + 16% CP concentrate mash. 2) Ensure continuous access to clean mineral water and salt licks. 3) Maintain consistent 12-hour milking intervals in clean parlor stalls. 4) Monitor udder health weekly to prevent subclinical mastitis.";
+      return "To maximize dairy cattle milk yield at Farm Builder: 1) Provide high-energy maize silage + 16% CP concentrate mash. 2) Ensure continuous access to clean mineral water and salt licks. 3) Maintain consistent 12-hour milking intervals in clean parlor stalls. 4) Monitor udder health weekly to prevent subclinical mastitis.";
     }
     if (q.includes("rice") || q.includes("wheat") || q.includes("fertilizer") || q.includes("crop")) {
-      return "For Basmati Rice & Wheat at Ahmed Farm: Apply 1 bag DAP + 1 bag SOP (Potash) per acre at sowing/transplanting, followed by split applications of Urea and Zinc Sulphate at tillering stage. Keep soil moisture between 60-75% during panicle initiation.";
+      return "For Basmati Rice & Wheat at Farm Builder: Apply 1 bag DAP + 1 bag SOP (Potash) per acre at sowing/transplanting, followed by split applications of Urea and Zinc Sulphate at tillering stage. Keep soil moisture between 60-75% during panicle initiation.";
     }
     if (q.includes("quarantine") || q.includes("sick") || q.includes("disease") || q.includes("health")) {
-      return "Ahmed Farm Quarantine Protocol: Immediately isolate symptomatic animals in Pen B Isolation Ward. Check rectal temperature twice daily. Withhold milk for the antibiotic withdrawal period (72-96h). Administer prescribed course under supervision of Dr. Tariq Mahmood.";
+      return "Farm Builder Quarantine Protocol: Immediately isolate symptomatic animals in Pen B Isolation Ward. Check rectal temperature twice daily. Withhold milk for the antibiotic withdrawal period (72-96h). Administer prescribed course under supervision of Dr. Tariq Mahmood.";
     }
-    return "Ahmed Farm AI Advisor: Our records indicate 156 head of livestock, 8 active crop plots (125 acres), and today's milk production of 420 Liters. How else may I assist with your farm planning?";
+    return "Farm Builder AI Advisor: Our records indicate 156 head of livestock, 8 active crop plots (125 acres), and today's milk production of 420 Liters. How else may I assist with your farm planning?";
   };
 
   const sendMessage = async (userMessage) => {

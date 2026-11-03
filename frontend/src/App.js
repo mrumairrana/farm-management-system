@@ -11,11 +11,11 @@ import LivestockManagement from "./components/LivestockManagement/LivestockManag
 import ResourceManagement from "./components/ResourceManagement/ResourceManagement";
 import MainChatBot from "./components/ChatBot/MainChatBot";
 import ReportGeneration from "./components/ReportGeneration/ReportGeneration";
-import AhmedLayout from "./components/AhmedFarm/AhmedLayout";
+import FarmBuilderLayout from "./components/AhmedFarm/FarmBuilderLayout";
 
 const App = () => {
-  // Modes: "ahmed_vip" (Default VIP 14-Module OS) or "classic" (Landing / Subsystems)
-  const [viewMode, setViewMode] = useState("ahmed_vip");
+  // Modes: "farm_builder" (Default VIP 14-Module OS) or "classic" (Landing / Subsystems)
+  const [viewMode, setViewMode] = useState("farm_builder");
 
   const [isSignUpOpen, setSignUpOpen] = useState(false);
   const [isLoginOpen, setLoginOpen] = useState(false);
@@ -89,8 +89,8 @@ const App = () => {
 
   return (
     <>
-      {viewMode === "ahmed_vip" ? (
-        <AhmedLayout
+      {viewMode === "farm_builder" ? (
+        <FarmBuilderLayout
           onNavigateToClassic={() => {
             navigateToLanding();
           }}
@@ -123,7 +123,7 @@ const App = () => {
             isLoggedIn={isLoggedIn}
             onProfileClick={toggleProfile}
             onNavigateToLanding={navigateToLanding}
-            onSwitchToVIP={() => setViewMode("ahmed_vip")}
+            onSwitchToVIP={() => setViewMode("farm_builder")}
             onAlertClick={() => {
               if (!isLoggedIn) {
                 setLoginOpen(true);
@@ -157,7 +157,7 @@ const App = () => {
             <LandingPage
               isLoggedIn={isLoggedIn}
               navigateToLogin={() => setLoginOpen(true)}
-              onSwitchToVIP={() => setViewMode("ahmed_vip")}
+              onSwitchToVIP={() => setViewMode("farm_builder")}
               onReminderServiceClick={() =>
                 handleProtectedClick(setShowServiceReminders)
               }

@@ -1168,7 +1168,7 @@ const LivestockModule = ({ animals, setAnimals, categories }) => {
                   <label className="text-gray-300 block mb-1">Dam (Mother ID)</label>
                   <input
                     type="text"
-                    placeholder="e.g. AHMED-C000M"
+                    placeholder="e.g. FB-C000M"
                     value={editingAnimal ? editingAnimal.motherId : formData.motherId}
                     onChange={(e) =>
                       editingAnimal
@@ -1182,7 +1182,7 @@ const LivestockModule = ({ animals, setAnimals, categories }) => {
                   <label className="text-gray-300 block mb-1">Sire (Father ID)</label>
                   <input
                     type="text"
-                    placeholder="e.g. AHMED-B001F"
+                    placeholder="e.g. FB-B001F"
                     value={editingAnimal ? editingAnimal.fatherId : formData.fatherId}
                     onChange={(e) =>
                       editingAnimal

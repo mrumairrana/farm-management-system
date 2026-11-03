@@ -32,7 +32,7 @@ const SettingsModule = ({ settings, setSettings, farmData, setFarmData }) => {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(backupObj, null, 2));
     const downloadAnchor = document.createElement("a");
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `Ahmed_Farm_Full_Backup_${new Date().toISOString().split("T")[0]}.json`);
+    downloadAnchor.setAttribute("download", `FarmBuilder_Full_Backup_${new Date().toISOString().split("T")[0]}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -48,7 +48,7 @@ const SettingsModule = ({ settings, setSettings, farmData, setFarmData }) => {
           const parsed = JSON.parse(event.target.result);
           if (parsed.settings) setSettings(parsed.settings);
           if (parsed.farmData && setFarmData) setFarmData(parsed.farmData);
-          alert("Backup data restored successfully into Ahmed Farm System!");
+          alert("Backup data restored successfully into Farm Builder System!");
         } catch (err) {
           alert("Invalid backup JSON file.");
         }

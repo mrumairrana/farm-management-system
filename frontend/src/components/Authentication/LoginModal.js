@@ -103,6 +103,7 @@ const LoginModal = ({ isOpen, onClose, onLoginSuccess }) => {
             placeholder="Email or Phone"
             value={emailOrPhone}
             onChange={(e) => setEmailOrPhone(e.target.value)}
+            style={{ color: "black" }}
             required
           />
           <input
@@ -110,6 +111,7 @@ const LoginModal = ({ isOpen, onClose, onLoginSuccess }) => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            style={{ color: "black" }}
             required
           />
           <button type="submit" className="button">Login</button>
